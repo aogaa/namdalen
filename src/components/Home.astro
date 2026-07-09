@@ -19,13 +19,15 @@ const base = localePath(lang);
 
 const facts = [
   ['property.f.type', 'property.f.typeVal'],
-  ['property.f.size', 'property.f.sizeVal'],
-  ['property.f.plot', 'property.f.plotVal'],
-  ['property.f.rooms', 'property.f.roomsVal'],
-  ['property.f.year', 'property.f.yearVal'],
+  ['property.f.area', 'property.f.areaVal'],
+  ['property.f.matrikkel', 'property.f.matrikkelVal'],
+  ['property.f.river', 'property.f.riverVal'],
+  ['property.f.airport', 'property.f.airportVal'],
   ['property.f.location', 'property.f.locationVal'],
   ['property.f.price', 'property.f.priceVal'],
 ] as const;
+
+const mapUrl = 'https://maps.app.goo.gl/N9xqx2y75C4ZEB648';
 
 // Fisket: første bilde stort, resten i rad
 const [fishingLead, ...fishingRest] = fishingPhotos;
@@ -148,6 +150,9 @@ const [areaLead, ...areaSeasons] = areaPhotos;
           <li>{t('area.travel2')}</li>
           <li>{t('area.travel3')}</li>
         </ul>
+        <p>
+          <a href={mapUrl} target="_blank" rel="noopener">{t('area.mapLink')} →</a>
+        </p>
       </div>
     </div>
 
@@ -164,6 +169,9 @@ const [areaLead, ...areaSeasons] = areaPhotos;
     <div class="section__head">
       <h2>{t('contact.title')}</h2>
       <p class="section__lead">{t('contact.lead')}</p>
+      <p class="eyebrow" style="margin-top:1.25rem">
+        {t('contact.personLabel')} · {t('contact.person')}
+      </p>
     </div>
     <div class="contact-grid">
       <div class="contact-card">

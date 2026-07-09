@@ -81,17 +81,18 @@ En rolig one-pager per språk, eventuelt med egne undersider senere:
 
 ## 7. Kontakt
 
-Kontakt via **e-post + telefon** (ingen skjema). Reelle detaljer er TODO;
-prosjekteier er `espen@aogaa.no`.
+Kontakt via **e-post + telefon** (ingen skjema). Kontaktperson/selger:
+**Gjermund Tangvald** — `g.tangvald@icloud.com`, `+47 986 20 425`.
+Prosjekteier (teknisk) er `espen@aogaa.no`.
 
 ## 8. Deploy (GitHub Pages)
 
 - Egen `CNAME`-fil med `namsen.aogaa.no`.
 - Sett `site`/`base` i `astro.config` til domenet (custom domain → `base: '/'`).
 - GitHub Actions bygger `dist/` og publiserer til Pages ved push til `main`.
-- **Merk:** `namdalen/` skal være sitt eget git-repo (`aogaa/namdalen`). Lokalt
-  ligger mappen foreløpig inne i paraply-repoet `C:/codex` — skille den ut som
-  eget repo før første push.
+- `C:\codex\namdalen` er nå eget git-repo koblet til `aogaa/namdalen`.
+- **Gjenstår for at domenet skal virke:** sett Pages-kilde til **GitHub Actions**
+  i repo-innstillingene, og legg DNS-CNAME `namsen` → `aogaa.github.io`.
 
 ## 9. Fakta som må verifiseres før publisering
 
@@ -99,13 +100,15 @@ Ikke publiser før eier har bekreftet. Hentes fra:
 - Namsen generelt: https://lakseelver.no/nb/elver/namsenvassdraget
 - Fiske/soner: https://fishnamsen.no/
 
-Sjekkliste (alle `TODO` til bekreftet):
-- [ ] Pris og eiendomsfakta (areal, rom, tomt, byggeår, standard)
-- [ ] Nøyaktig beliggenhet / kart
-- [ ] Bilder (høyoppløst, rettighetsklarert)
-- [ ] Kontaktperson, e-post, telefon
-- [ ] Fiskerettigheter som følger / ikke følger eiendommen (viktig for kjøper!)
-- [ ] Reiseinfo (nærmeste flyplass: Trondheim/Namsos, kjøretid)
+Sjekkliste:
+- [x] Pris (€ 250 000) og hovedfakta (BRA 109/199 m², matrikkel gnr.10 bnr.117)
+- [x] Beliggenhet / kart (611 m til Namsen, Google Maps-lenke i området-seksjon)
+- [x] Kontaktperson, e-post, telefon (Gjermund Tangvald)
+- [x] Reiseinfo (Namsos ~10 min, Trondheim ~2,5 t)
+- [x] Bilder koblet inn (52 foto i `src/images/`, kuratert i `src/data/photos.ts`)
+- [ ] Bilder rettighetsklarert for publisering (bekreftes av eier)
+- [ ] Byggeår, antall soverom, tomteareal/eierform (ikke oppgitt ennå)
+- [ ] **Fiskerettigheter** som følger / ikke følger eiendommen (viktig for kjøper!)
 
 ## 10. Retningslinjer for Claude
 
