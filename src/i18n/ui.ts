@@ -68,13 +68,12 @@ export const ui = {
       'Overhalla ligger midt i Namdalen, omgitt av skog, jordbrukslandskap og elva. Et rolig og trygt sted, med kort vei til dagligvarer og tjenester.',
     'area.travelTitle': 'Reise hit',
     'area.travel1': 'Namsos lufthavn: ca. 10 minutter med bil',
-    'area.travel2': 'Trondheim lufthavn: ca. 2,5 timers kjøring (leiebil)',
     'area.travel3': 'Bussholdeplass rett ved eiendommen · gangavstand til butikk',
     'area.mapLink': 'Se beliggenheten i kart',
 
     'contact.title': 'Interessert?',
     'contact.lead':
-      'Ta kontakt for prospekt, bilder og en prat om eiendommen og fisket.',
+      'Ta kontakt for en prat om eiendommen og fisket.',
     'contact.emailLabel': 'E-post',
     'contact.phoneLabel': 'Telefon',
     'contact.email': 'g.tangvald@icloud.com',
@@ -173,13 +172,12 @@ export const ui = {
       'Overhalla sits in the heart of Namdalen, surrounded by forest, farmland and the river. A quiet, safe place with everyday shops and services close by.',
     'area.travelTitle': 'Getting here',
     'area.travel1': 'Namsos Airport: approx. 10 minutes by car',
-    'area.travel2': 'Trondheim Airport: approx. 2.5 hours’ drive (rental car)',
     'area.travel3': 'Bus stop right by the property · walking distance to a shop',
     'area.mapLink': 'See the location on a map',
 
     'contact.title': 'Interested?',
     'contact.lead':
-      'Get in touch for the prospectus, photos and a chat about the property and the fishing.',
+      'Get in touch for a chat about the property and the fishing.',
     'contact.emailLabel': 'Email',
     'contact.phoneLabel': 'Phone',
     'contact.email': 'g.tangvald@icloud.com',
@@ -279,13 +277,12 @@ export const ui = {
       'Overhalla liegt mitten in Namdalen, umgeben von Wald, Feldern und dem Fluss. Ein ruhiger, sicherer Ort mit Geschäften und Diensten des täglichen Bedarfs in der Nähe.',
     'area.travelTitle': 'Anreise',
     'area.travel1': 'Flughafen Namsos: ca. 10 Minuten mit dem Auto',
-    'area.travel2': 'Flughafen Trondheim: ca. 2,5 Stunden Fahrt (Mietwagen)',
     'area.travel3': 'Bushaltestelle direkt am Grundstück · fußläufig zum Geschäft',
     'area.mapLink': 'Lage auf der Karte ansehen',
 
     'contact.title': 'Interessiert?',
     'contact.lead':
-      'Melden Sie sich für Exposé, Fotos und ein Gespräch über das Anwesen und das Fischen.',
+      'Melden Sie sich für ein Gespräch über das Anwesen und das Fischen.',
     'contact.emailLabel': 'E-Mail',
     'contact.phoneLabel': 'Telefon',
     'contact.email': 'g.tangvald@icloud.com',
@@ -385,13 +382,12 @@ export const ui = {
       'Overhalla ligt midden in Namdalen, omringd door bos, landbouwgrond en de rivier. Een rustige, veilige plek met winkels en voorzieningen dichtbij.',
     'area.travelTitle': 'Reizen naar hier',
     'area.travel1': 'Luchthaven Namsos: ca. 10 minuten met de auto',
-    'area.travel2': 'Luchthaven Trondheim: ca. 2,5 uur rijden (huurauto)',
     'area.travel3': 'Bushalte direct bij de woning · loopafstand tot winkel',
     'area.mapLink': 'Bekijk de locatie op de kaart',
 
     'contact.title': 'Interesse?',
     'contact.lead':
-      'Neem contact op voor de brochure, foto’s en een gesprek over de woning en het vissen.',
+      'Neem contact op voor een gesprek over de woning en het vissen.',
     'contact.emailLabel': 'E-mail',
     'contact.phoneLabel': 'Telefoon',
     'contact.email': 'g.tangvald@icloud.com',
