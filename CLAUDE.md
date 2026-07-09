@@ -11,7 +11,9 @@ laksefiske i **Namsen** ("Dronningen av elvene").
 - **Domene:** `namsen.aogaa.no`
 - **Repo:** https://github.com/aogaa/namdalen
 - **Hosting:** GitHub Pages (statisk, ingen backend)
-- **Status:** Nyoppstartet — innhold og bilder er foreløpig plassholdere.
+- **Status:** Astro-skjelett bygget. Ekte foto er kuratert og koblet inn
+  (se `src/data/photos.ts`). Faktatekst, pris og kontaktdetaljer er fortsatt
+  plassholdere merket med `[klammer]`.
 
 ## 2. Målgruppe
 

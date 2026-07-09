@@ -82,6 +82,27 @@ export const ui = {
 
     'footer.tagline': 'Din base for laksefiske ved Namsen.',
     'footer.rights': 'Alle rettigheter forbeholdt.',
+
+    'fishing.galleryTitle': 'Elva',
+    'area.seasonsTitle': 'Gjennom årstidene',
+
+    'cap.exterior': 'Eiendommen med uthus og innkjørsel',
+    'cap.facade': 'Fasade og inngangsparti',
+    'cap.livingroom': 'Lys stue',
+    'cap.woodstove': 'Vedovn gir lune kvelder',
+    'cap.kitchen': 'Kjøkken med utsikt til jordene',
+    'cap.bathroom': 'Bad med frittstående badekar',
+    'cap.bedroom': 'Soverom med utsikt til grønt',
+    'cap.dining': 'Dekket bord ved vinduet',
+    'cap.namsen_pano': 'Namsen speiler fjellene',
+    'cap.namsen_valley': 'Elva slynger seg gjennom dalen',
+    'cap.namsen_view': 'Utsikt over Namsen',
+    'cap.creek': 'Bekk gjennom enga nær huset',
+    'cap.namsen_church': 'Elva, jordene og bygdekirka',
+    'cap.setting': 'Eiendommen i landskapet',
+    'cap.winter': 'Vinterkveld over bygda',
+    'cap.sunrise': 'Morgenlys over jordene',
+    'cap.deer': 'Rådyr i vinterlandskapet',
   },
 
   en: {
@@ -154,6 +175,27 @@ export const ui = {
 
     'footer.tagline': 'Your base for salmon fishing on the Namsen.',
     'footer.rights': 'All rights reserved.',
+
+    'fishing.galleryTitle': 'The river',
+    'area.seasonsTitle': 'Through the seasons',
+
+    'cap.exterior': 'The property with outbuildings and driveway',
+    'cap.facade': 'Facade and entrance',
+    'cap.livingroom': 'Bright living room',
+    'cap.woodstove': 'A wood stove for cosy evenings',
+    'cap.kitchen': 'Kitchen with a view over the fields',
+    'cap.bathroom': 'Bathroom with a freestanding bathtub',
+    'cap.bedroom': 'Bedroom overlooking greenery',
+    'cap.dining': 'A table set by the window',
+    'cap.namsen_pano': 'The Namsen mirrors the mountains',
+    'cap.namsen_valley': 'The river winds through the valley',
+    'cap.namsen_view': 'A view over the Namsen',
+    'cap.creek': 'A stream through the meadow near the house',
+    'cap.namsen_church': 'The river, the fields and the village church',
+    'cap.setting': 'The property in its landscape',
+    'cap.winter': 'A winter evening over the village',
+    'cap.sunrise': 'Morning light over the fields',
+    'cap.deer': 'Roe deer in the winter landscape',
   },
 
   de: {
@@ -226,6 +268,27 @@ export const ui = {
 
     'footer.tagline': 'Ihre Basis zum Lachsfischen am Namsen.',
     'footer.rights': 'Alle Rechte vorbehalten.',
+
+    'fishing.galleryTitle': 'Der Fluss',
+    'area.seasonsTitle': 'Durch die Jahreszeiten',
+
+    'cap.exterior': 'Das Anwesen mit Nebengebäuden und Auffahrt',
+    'cap.facade': 'Fassade und Eingang',
+    'cap.livingroom': 'Helles Wohnzimmer',
+    'cap.woodstove': 'Ein Holzofen für gemütliche Abende',
+    'cap.kitchen': 'Küche mit Blick über die Felder',
+    'cap.bathroom': 'Bad mit freistehender Badewanne',
+    'cap.bedroom': 'Schlafzimmer mit Blick ins Grüne',
+    'cap.dining': 'Gedeckter Tisch am Fenster',
+    'cap.namsen_pano': 'Der Namsen spiegelt die Berge',
+    'cap.namsen_valley': 'Der Fluss windet sich durch das Tal',
+    'cap.namsen_view': 'Blick über den Namsen',
+    'cap.creek': 'Ein Bach durch die Wiese am Haus',
+    'cap.namsen_church': 'Der Fluss, die Felder und die Dorfkirche',
+    'cap.setting': 'Das Anwesen in der Landschaft',
+    'cap.winter': 'Winterabend über dem Dorf',
+    'cap.sunrise': 'Morgenlicht über den Feldern',
+    'cap.deer': 'Rehe in der Winterlandschaft',
   },
 
   nl: {
@@ -298,6 +361,27 @@ export const ui = {
 
     'footer.tagline': 'Uw basis voor zalmvissen aan de Namsen.',
     'footer.rights': 'Alle rechten voorbehouden.',
+
+    'fishing.galleryTitle': 'De rivier',
+    'area.seasonsTitle': 'Door de seizoenen',
+
+    'cap.exterior': 'De woning met bijgebouwen en oprit',
+    'cap.facade': 'Gevel en entree',
+    'cap.livingroom': 'Lichte woonkamer',
+    'cap.woodstove': 'Een houtkachel voor gezellige avonden',
+    'cap.kitchen': 'Keuken met uitzicht over de velden',
+    'cap.bathroom': 'Badkamer met vrijstaand bad',
+    'cap.bedroom': 'Slaapkamer met uitzicht op het groen',
+    'cap.dining': 'Een gedekte tafel bij het raam',
+    'cap.namsen_pano': 'De Namsen weerspiegelt de bergen',
+    'cap.namsen_valley': 'De rivier kronkelt door het dal',
+    'cap.namsen_view': 'Uitzicht over de Namsen',
+    'cap.creek': 'Een beek door de wei bij het huis',
+    'cap.namsen_church': 'De rivier, de velden en de dorpskerk',
+    'cap.setting': 'De woning in het landschap',
+    'cap.winter': 'Winteravond boven het dorp',
+    'cap.sunrise': 'Ochtendlicht over de velden',
+    'cap.deer': 'Reeën in het winterlandschap',
   },
 } as const;
 

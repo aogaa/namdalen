@@ -1,16 +1,16 @@
 # Bilder
 
-Legg høyoppløste foto av huset, tomta, utsikten og elva her.
+Her ligger hele bildebiblioteket (`namdalen*.webp`). Det **kuraterte utvalget**
+som vises på siden er definert i [`src/data/photos.ts`](../data/photos.ts) —
+kun bildene som importeres der blir optimalisert og lagt i det ferdige bygget.
 
-Når ekte foto er på plass, bytt ut `<Placeholder />` i
-`src/components/Home.astro` med Astros optimaliserte bilde:
+## Bytte ut / legge til bilder
 
-```astro
----
-import { Image } from 'astro:assets';
-import hus from '../images/hus.jpg';
----
-<Image src={hus} alt="..." widths={[480, 960, 1600]} />
-```
+1. Legg nye `.webp`/`.jpg` her.
+2. Importer dem i `src/data/photos.ts` og legg dem i riktig gruppe
+   (`propertyPhotos`, `fishingPhotos`, `areaPhotos`) med en `cap`-nøkkel.
+3. Legg til bildeteksten (`cap.*`) på alle fire språk i
+   [`src/i18n/ui.ts`](../i18n/ui.ts).
 
-Da genereres responsive WebP/AVIF automatisk.
+Astros `<Image>` (via `Figure.astro`) lager responsive WebP/AVIF automatisk —
+originalene kan derfor være i full oppløsning.

@@ -228,22 +228,28 @@ img {
   color: #fff;
   overflow: hidden;
 }
-.hero__bg {
+.hero__media {
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, #1c4650 0%, #0d2429 60%, #071619 100%);
+  background: #0d2429;
 }
-.hero__bg::after {
-  /* subtil "elve"-tekstur */
-  content: '';
+.hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__scrim {
+  /* mørkner nederst mot venstre for lesbar hvit tekst */
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-      120% 80% at 80% 0%,
-      rgba(176, 137, 90, 0.22),
-      transparent 55%
+  background: linear-gradient(
+      to top,
+      rgba(7, 22, 25, 0.82) 0%,
+      rgba(7, 22, 25, 0.35) 42%,
+      rgba(7, 22, 25, 0.05) 70%,
+      rgba(7, 22, 25, 0.25) 100%
     ),
-    radial-gradient(90% 60% at 10% 100%, rgba(28, 70, 80, 0.6), transparent 60%);
+    linear-gradient(to right, rgba(7, 22, 25, 0.45), transparent 55%);
 }
 .hero__inner {
   position: relative;
@@ -302,27 +308,68 @@ img {
   text-align: center;
 }
 
-/* Galleri */
+/* Galleri — mosaikk, første bilde stort */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(0.6rem, 1.5vw, 1rem);
 }
-.gallery > *:nth-child(1) {
-  grid-column: span 8;
+.gallery > *:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
 }
-.gallery > *:nth-child(2) {
-  grid-column: span 4;
+.gallery--row {
+  grid-template-columns: repeat(4, 1fr);
 }
-.gallery > *:nth-child(3),
-.gallery > *:nth-child(4),
-.gallery > *:nth-child(5) {
-  grid-column: span 4;
+.gallery--row > *:first-child {
+  grid-column: auto;
+  grid-row: auto;
 }
 @media (max-width: 720px) {
-  .gallery > * {
-    grid-column: 1 / -1 !important;
+  .gallery,
+  .gallery--row {
+    grid-template-columns: repeat(2, 1fr);
   }
+  .gallery > *:first-child {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+}
+
+/* Bilde med tekst */
+.shot {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--bg-alt);
+  aspect-ratio: 4 / 3;
+}
+.shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.shot:hover img {
+  transform: scale(1.04);
+}
+.shot figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.4rem 1rem 0.85rem;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  background: linear-gradient(to top, rgba(7, 22, 25, 0.78), transparent);
+}
+/* I split-layout fyller bildet kolonnen med fast høyde */
+.split .shot {
+  aspect-ratio: 4 / 3;
+  height: 100%;
 }
 
 /* Fakta-liste */

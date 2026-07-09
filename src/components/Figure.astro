@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import { type Lang } from '../i18n/ui';
+import { useTranslations } from '../i18n/utils';
+import type { Photo } from '../data/photos';
+
+interface Props {
+  photo: Photo;
+  lang: Lang;
+  sizes?: string;
+  loading?: 'lazy' | 'eager';
+}
+const { photo, lang, sizes = '(max-width: 720px) 100vw, 33vw', loading = 'lazy' } =
+  Astro.props;
+const t = useTranslations(lang);
+const caption = t(photo.cap);
+---
+
+<figure class="shot">
+  <Image
+    src={photo.src}
+    alt={caption}
+    widths={[400, 700, 1066]}
+    sizes={sizes}
+    loading={loading}
+  />
+  <figcaption>{caption}</figcaption>
+</figure>
