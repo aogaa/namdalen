@@ -108,7 +108,8 @@ Sjekkliste:
 - [x] Bilder koblet inn (52 foto i `src/images/`, kuratert i `src/data/photos.ts`)
 - [ ] Bilder rettighetsklarert for publisering (bekreftes av eier)
 - [ ] Byggeår, antall soverom, tomteareal/eierform (ikke oppgitt ennå)
-- [ ] **Fiskerettigheter** som følger / ikke følger eiendommen (viktig for kjøper!)
+- [x] **Fiskerettigheter:** ingen følger med eiendommen (avklart). Fiske via
+  fiskekort/vald hos lokale tilbydere — formidlet ærlig i fiske-seksjonen.
 
 ## 10. Retningslinjer for Claude
 

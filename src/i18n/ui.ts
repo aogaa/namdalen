@@ -60,7 +60,7 @@ export const ui = {
     'fishing.factLength': 'Ca. 100 km lakseførende elv',
     'fishing.linksTitle': 'Les mer om Namsen',
     'fishing.disclaimer':
-      'Fiskerettigheter, kortsalg og soner varierer. Hva som følger med eiendommen bekreftes av selger.',
+      'Det følger ingen fiskerettigheter med eiendommen. Fiske i Namsen er tilgjengelig for alle gjennom fiskekort og vald hos lokale tilbydere – eiendommen er din komfortable base i kort avstand fra elva.',
 
     'area.title': 'Området',
     'area.lead': 'Overhalla i Namdalen — trøndersk natur, laks og ro.',
@@ -164,7 +164,7 @@ export const ui = {
     'fishing.factLength': 'Approx. 100 km of salmon river',
     'fishing.linksTitle': 'Read more about the Namsen',
     'fishing.disclaimer':
-      'Fishing rights, licences and beats vary. What is included with the property is confirmed by the seller.',
+      'No fishing rights are included with the property. Fishing on the Namsen is open to everyone through day cards and beats from local providers — the property is your comfortable base within easy reach of the river.',
 
     'area.title': 'The area',
     'area.lead': 'Overhalla in Namdalen — Norwegian nature, salmon and calm.',
@@ -269,7 +269,7 @@ export const ui = {
     'fishing.factLength': 'Ca. 100 km Lachsfluss',
     'fishing.linksTitle': 'Mehr über den Namsen',
     'fishing.disclaimer':
-      'Fischereirechte, Lizenzen und Strecken variieren. Was zum Anwesen gehört, bestätigt der Verkäufer.',
+      'Zum Anwesen gehören keine Fischereirechte. Das Fischen im Namsen steht allen über Angelkarten und Strecken lokaler Anbieter offen – das Anwesen ist Ihre komfortable Basis in kurzer Entfernung zum Fluss.',
 
     'area.title': 'Die Region',
     'area.lead': 'Overhalla in Namdalen — norwegische Natur, Lachs und Ruhe.',
@@ -374,7 +374,7 @@ export const ui = {
     'fishing.factLength': 'Ca. 100 km zalmrivier',
     'fishing.linksTitle': 'Lees meer over de Namsen',
     'fishing.disclaimer':
-      'Visrechten, vergunningen en trajecten verschillen. Wat bij de woning hoort, bevestigt de verkoper.',
+      'Er horen geen visrechten bij de woning. Vissen in de Namsen staat open voor iedereen via visvergunningen en trajecten van lokale aanbieders – de woning is uw comfortabele basis op korte afstand van de rivier.',
 
     'area.title': 'De omgeving',
     'area.lead': 'Overhalla in Namdalen — Noorse natuur, zalm en rust.',
