@@ -6,6 +6,13 @@ interface Props {
   current: Lang;
 }
 const { current } = Astro.props;
+
+const flags: Record<Lang, string> = {
+  no: '🇳🇴',
+  en: '🇬🇧',
+  de: '🇩🇪',
+  nl: '🇳🇱',
+};
 ---
 
 <nav class="langpicker" aria-label="Språk / Language">
@@ -15,8 +22,10 @@ const { current } = Astro.props;
         href={`${localePath(lang)}/`}
         hreflang={lang}
         aria-current={lang === current ? 'true' : 'false'}
+        aria-label={languages[lang]}
+        title={languages[lang]}
       >
-        {lang}
+        <span aria-hidden="true">{flags[lang]}</span>
       </a>
     ))
   }
