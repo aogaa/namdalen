@@ -105,6 +105,16 @@ export const ui = {
     'cap.winter': 'Vinterkveld over bygda',
     'cap.sunrise': 'Morgenlys over jordene',
     'cap.deer': 'Rådyr i vinterlandskapet',
+
+    'nav.explore': 'Utforsk',
+    'area.flights': 'Daglige flyavganger fra Amsterdam, London og Frankfurt',
+    'area.total':
+      'Under 5 timer fra du setter deg på flyet til du sitter foran peisen.',
+    'links.title': 'Utforsk Namsen og Namdalen',
+    'links.lead': 'Nyttige kilder om elva, regionen og naturen rundt eiendommen.',
+    'links.region': 'Region og reiseliv',
+    'links.fishing': 'Fisket i Namsen',
+    'links.nature': 'Natur og nasjonalparker',
   },
 
   en: {
@@ -200,6 +210,17 @@ export const ui = {
     'cap.winter': 'A winter evening over the village',
     'cap.sunrise': 'Morning light over the fields',
     'cap.deer': 'Roe deer in the winter landscape',
+
+    'nav.explore': 'Explore',
+    'area.flights': 'Daily flight connections from Amsterdam, London and Frankfurt',
+    'area.total':
+      'Under five hours from your seat on the plane to your seat by the fire.',
+    'links.title': 'Explore the Namsen and Namdalen',
+    'links.lead':
+      'Useful sources about the river, the region and the nature around the property.',
+    'links.region': 'Region & travel',
+    'links.fishing': 'Fishing the Namsen',
+    'links.nature': 'Nature & national parks',
   },
 
   de: {
@@ -295,6 +316,17 @@ export const ui = {
     'cap.winter': 'Winterabend über dem Dorf',
     'cap.sunrise': 'Morgenlicht über den Feldern',
     'cap.deer': 'Rehe in der Winterlandschaft',
+
+    'nav.explore': 'Entdecken',
+    'area.flights': 'Tägliche Flugverbindungen ab Amsterdam, London und Frankfurt',
+    'area.total':
+      'Weniger als fünf Stunden vom Sitz im Flugzeug bis zum Platz am Kamin.',
+    'links.title': 'Entdecken Sie Namsen und Namdalen',
+    'links.lead':
+      'Nützliche Quellen über den Fluss, die Region und die Natur rund um das Anwesen.',
+    'links.region': 'Region & Reise',
+    'links.fishing': 'Fischen im Namsen',
+    'links.nature': 'Natur & Nationalparks',
   },
 
   nl: {
@@ -390,6 +422,17 @@ export const ui = {
     'cap.winter': 'Winteravond boven het dorp',
     'cap.sunrise': 'Ochtendlicht over de velden',
     'cap.deer': 'Reeën in het winterlandschap',
+
+    'nav.explore': 'Ontdek',
+    'area.flights': 'Dagelijkse vluchtverbindingen vanuit Amsterdam, Londen en Frankfurt',
+    'area.total':
+      'Minder dan vijf uur van uw stoel in het vliegtuig tot uw plek bij de haard.',
+    'links.title': 'Ontdek de Namsen en Namdalen',
+    'links.lead':
+      'Handige bronnen over de rivier, de regio en de natuur rond de woning.',
+    'links.region': 'Regio & reizen',
+    'links.fishing': 'Vissen in de Namsen',
+    'links.nature': 'Natuur & nationale parken',
   },
 } as const;
 

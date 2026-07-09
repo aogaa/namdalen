@@ -451,6 +451,55 @@ img {
   margin-top: 1.5rem;
 }
 
+/* Fremhevet salgspoeng (flyforbindelser) */
+.callout {
+  margin: 1.5rem 0 0.5rem;
+  padding: 1.1rem 1.35rem;
+  background: var(--river);
+  color: #fff;
+  border-radius: 3px;
+  border-left: 4px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.callout strong {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+.callout span {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+}
+
+/* Ressurs-/lenkeseksjon */
+.linkgroups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+.linkgroup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.linkgroup a {
+  display: block;
+  text-decoration: none;
+  color: var(--river);
+  border-bottom: 1px solid var(--line);
+  padding: 0.6rem 0;
+  transition: color 0.15s ease, padding-left 0.15s ease;
+}
+.linkgroup a:hover {
+  color: var(--accent-ink);
+  padding-left: 0.35rem;
+}
+
 /* Kontakt */
 .contact-grid {
   display: grid;

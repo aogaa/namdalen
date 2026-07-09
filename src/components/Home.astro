@@ -9,6 +9,7 @@ import {
   fishingPhotos,
   areaPhotos,
 } from '../data/photos';
+import { linkGroups, resolveUrl } from '../data/links';
 
 interface Props {
   lang: Lang;
@@ -117,20 +118,6 @@ const [areaLead, ...areaSeasons] = areaPhotos;
       {fishingRest.map((photo) => <Figure photo={photo} lang={lang} sizes="(max-width: 720px) 100vw, 25vw" />)}
     </div>
 
-    <h3 style="margin-top:2.5rem">{t('fishing.linksTitle')}</h3>
-    <ul class="linklist">
-      <li>
-        <a href="https://lakseelver.no/nb/elver/namsenvassdraget" target="_blank" rel="noopener">
-          lakseelver.no — Namsenvassdraget
-        </a>
-      </li>
-      <li>
-        <a href="https://fishnamsen.no/" target="_blank" rel="noopener">
-          fishnamsen.no
-        </a>
-      </li>
-    </ul>
-
     <p class="note">{t('fishing.disclaimer')}</p>
   </div>
 </section>
@@ -144,6 +131,10 @@ const [areaLead, ...areaSeasons] = areaPhotos;
         <p class="eyebrow">{t('area.lead')}</p>
         <h2>{t('area.title')}</h2>
         <p>{t('area.p1')}</p>
+        <div class="callout">
+          <strong>{t('area.flights')}</strong>
+          <span>{t('area.total')}</span>
+        </div>
         <h3 style="margin-top:1.5rem">{t('area.travelTitle')}</h3>
         <ul>
           <li>{t('area.travel1')}</li>
@@ -163,8 +154,36 @@ const [areaLead, ...areaSeasons] = areaPhotos;
   </div>
 </section>
 
+<!-- UTFORSK / RESSURSER -->
+<section id="explore" class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <h2>{t('links.title')}</h2>
+      <p class="section__lead">{t('links.lead')}</p>
+    </div>
+    <div class="linkgroups">
+      {
+        linkGroups.map((group) => (
+          <div class="linkgroup">
+            <h3>{t(group.titleKey)}</h3>
+            <ul>
+              {group.items.map((item) => (
+                <li>
+                  <a href={resolveUrl(item.url, lang)} target="_blank" rel="noopener">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
 <!-- KONTAKT -->
-<section id="contact" class="section section--alt">
+<section id="contact" class="section">
   <div class="container">
     <div class="section__head">
       <h2>{t('contact.title')}</h2>
