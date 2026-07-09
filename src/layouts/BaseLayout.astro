@@ -3,6 +3,7 @@ import { languages, type Lang } from '../i18n/ui';
 import { useTranslations, localePath, hreflang } from '../i18n/utils';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Lightbox from '../components/Lightbox.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -49,5 +50,6 @@ const canonical = new URL(`${localePath(lang)}/`, site).href;
       <slot />
     </main>
     <Footer lang={lang} />
+    <Lightbox lang={lang} />
   </body>
 </html>

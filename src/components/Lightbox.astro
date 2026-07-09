@@ -1,0 +1,66 @@
+---
+import { type Lang } from '../i18n/ui';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const closeLabel = t('lightbox.close');
+---
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button type="button" class="lightbox__close" aria-label={closeLabel}>×</button>
+  <figure class="lightbox__fig">
+    <img class="lightbox__img" alt="" />
+    <figcaption class="lightbox__cap"></figcaption>
+  </figure>
+</div>
+
+<script>
+  const lb = document.getElementById('lightbox');
+  if (lb) {
+    const img = lb.querySelector('.lightbox__img') as HTMLImageElement;
+    const cap = lb.querySelector('.lightbox__cap') as HTMLElement;
+    const closeBtn = lb.querySelector('.lightbox__close') as HTMLButtonElement;
+    let lastFocus: HTMLElement | null = null;
+
+    const open = (src: string, caption: string) => {
+      lastFocus = document.activeElement as HTMLElement;
+      img.src = src;
+      img.alt = caption || '';
+      cap.textContent = caption || '';
+      lb.classList.add('is-open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    };
+
+    const close = () => {
+      lb.classList.remove('is-open');
+      lb.setAttribute('aria-hidden', 'true');
+      img.removeAttribute('src');
+      document.body.style.overflow = '';
+      if (lastFocus) lastFocus.focus();
+    };
+
+    document.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      const shot = target.closest('.shot') as HTMLElement | null;
+      if (shot && shot.dataset.full) {
+        e.preventDefault();
+        open(shot.dataset.full, shot.dataset.caption || '');
+        return;
+      }
+      // klikk på bakgrunn eller lukk-knapp
+      if (target === lb || target.closest('.lightbox__close')) {
+        close();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lb.classList.contains('is-open')) close();
+    });
+  }
+</script>

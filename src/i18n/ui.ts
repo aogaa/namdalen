@@ -114,6 +114,7 @@ export const ui = {
     'links.region': 'Region og reiseliv',
     'links.fishing': 'Fisket i Namsen',
     'links.nature': 'Natur og nasjonalparker',
+    'lightbox.close': 'Lukk',
   },
 
   en: {
@@ -219,6 +220,7 @@ export const ui = {
     'links.region': 'Region & travel',
     'links.fishing': 'Fishing the Namsen',
     'links.nature': 'Nature & national parks',
+    'lightbox.close': 'Close',
   },
 
   de: {
@@ -324,6 +326,7 @@ export const ui = {
     'links.region': 'Region & Reise',
     'links.fishing': 'Fischen im Namsen',
     'links.nature': 'Natur & Nationalparks',
+    'lightbox.close': 'Schließen',
   },
 
   nl: {
@@ -429,6 +432,7 @@ export const ui = {
     'links.region': 'Regio & reizen',
     'links.fishing': 'Vissen in de Namsen',
     'links.nature': 'Natuur & nationale parken',
+    'lightbox.close': 'Sluiten',
   },
 } as const;
 

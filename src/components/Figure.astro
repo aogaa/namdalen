@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { type Lang } from '../i18n/ui';
 import { useTranslations } from '../i18n/utils';
 import type { Photo } from '../data/photos';
@@ -14,9 +14,22 @@ const { photo, lang, sizes = '(max-width: 720px) 100vw, 33vw', loading = 'lazy' 
   Astro.props;
 const t = useTranslations(lang);
 const caption = t(photo.cap);
+
+// Full oppløsning til lightbox (klikk for større versjon)
+const full = await getImage({
+  src: photo.src,
+  width: photo.src.width,
+  format: 'webp',
+});
 ---
 
-<figure class="shot">
+<button
+  type="button"
+  class="shot"
+  data-full={full.src}
+  data-caption={caption}
+  aria-label={caption}
+>
   <Image
     src={photo.src}
     alt={caption}
@@ -24,5 +37,5 @@ const caption = t(photo.cap);
     sizes={sizes}
     loading={loading}
   />
-  <figcaption>{caption}</figcaption>
-</figure>
+  <span class="shot__cap">{caption}</span>
+</button>
