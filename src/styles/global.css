@@ -215,8 +215,14 @@ img {
   color: var(--ink-soft);
   text-decoration: none;
   line-height: 1;
-  font-size: 1.15rem;
   transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.langpicker img {
+  width: 1.5rem;
+  height: 1.125rem;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(13, 36, 41, 0.14);
+  object-fit: cover;
 }
 .langpicker a[aria-current='true'] {
   background: var(--white);
