@@ -1,0 +1,304 @@
+// Alle fire språk i én kilde. Del innhold via nøkler; ikke dupliser markup.
+// Fakta i [klammer] er PLASSHOLDERE — må bekreftes av eier før publisering.
+
+export const languages = {
+  no: 'Norsk',
+  en: 'English',
+  de: 'Deutsch',
+  nl: 'Nederlands',
+} as const;
+
+export type Lang = keyof typeof languages;
+export const defaultLang: Lang = 'no';
+
+export const ui = {
+  no: {
+    'site.title': 'Namsen — din base for laksefiske i Namdalen',
+    'site.description':
+      'Eksklusiv eiendom i Overhalla ved Namsen — dronningen av norske lakseelver. Din faste base for uforglemmelige fisketurer.',
+
+    'nav.property': 'Eiendommen',
+    'nav.fishing': 'Fisket',
+    'nav.area': 'Området',
+    'nav.contact': 'Kontakt',
+
+    'hero.eyebrow': 'Overhalla · Namdalen · Norge',
+    'hero.title': 'Din base ved Namsen',
+    'hero.subtitle':
+      'En eiendom skapt for den som elsker laksefiske — ved en av verdens fremste elver for atlantisk laks.',
+    'hero.cta': 'Se eiendommen',
+    'hero.cta2': 'Om fisket',
+
+    'property.title': 'Eiendommen',
+    'property.lead':
+      'Et hjem med plass, ro og nærhet til elva — perfekt som feriebolig og base for fiskesesongen.',
+    'property.factsTitle': 'Fakta',
+    'property.f.type': 'Type',
+    'property.f.typeVal': '[Enebolig / fritidseiendom]',
+    'property.f.size': 'Boareal',
+    'property.f.sizeVal': '[BRA m²]',
+    'property.f.plot': 'Tomt',
+    'property.f.plotVal': '[Tomteareal / eiet]',
+    'property.f.rooms': 'Rom / soverom',
+    'property.f.roomsVal': '[antall]',
+    'property.f.year': 'Byggeår / standard',
+    'property.f.yearVal': '[år / oppgradert]',
+    'property.f.price': 'Prisantydning',
+    'property.f.priceVal': '[pris]',
+    'property.f.location': 'Beliggenhet',
+    'property.f.locationVal': 'Overhalla, ca. [x] m fra Namsen',
+    'property.galleryNote': 'Bilder legges inn her',
+
+    'fishing.title': 'Fisket i Namsen',
+    'fishing.lead': '«Dronningen av elvene» — kjent for storlaks siden 1800-tallet.',
+    'fishing.p1':
+      'Namsenvassdraget er ett av Norges lengste og mest anerkjente laksevassdrag, med rundt 100 km lakseførende strekning og en lang historie med stor laks. Elva byr på alt fra rolige, brede høler til strie strømpartier — fiske fra båt (harling) og fra land.',
+    'fishing.p2':
+      'Sesongen strekker seg normalt fra tidlig sommer til utpå høsten. Fra eiendommen når du flere soner på kort tid, slik at du kan følge forholdene og finne det beste fisket dag for dag.',
+    'fishing.factHarling': 'Klassisk harling fra båt',
+    'fishing.factBig': 'Kjent for storlaks',
+    'fishing.factLength': 'Ca. 100 km lakseførende elv',
+    'fishing.linksTitle': 'Les mer om Namsen',
+    'fishing.disclaimer':
+      'Fiskerettigheter, kortsalg og soner varierer. Hva som følger med eiendommen bekreftes av selger.',
+
+    'area.title': 'Området',
+    'area.lead': 'Overhalla i Namdalen — trøndersk natur, laks og ro.',
+    'area.p1':
+      'Overhalla ligger midt i Namdalen, omgitt av skog, jordbrukslandskap og elva. Et rolig og trygt sted, med kort vei til dagligvarer og tjenester.',
+    'area.travelTitle': 'Reise hit',
+    'area.travel1': 'Nærmeste flyplasser: [Namsos / Trondheim Værnes]',
+    'area.travel2': 'Kjøretid fra Værnes: ca. [x] timer',
+    'area.travel3': 'Direkte forbindelser fra [UK / DE / NL] via Oslo eller Trondheim',
+
+    'contact.title': 'Interessert?',
+    'contact.lead':
+      'Ta kontakt for prospekt, bilder og en prat om eiendommen og fisket.',
+    'contact.emailLabel': 'E-post',
+    'contact.phoneLabel': 'Telefon',
+    'contact.email': 'espen@aogaa.no',
+    'contact.phone': '[+47 xxx xx xxx]',
+    'contact.person': '[Kontaktperson / selger]',
+
+    'footer.tagline': 'Din base for laksefiske ved Namsen.',
+    'footer.rights': 'Alle rettigheter forbeholdt.',
+  },
+
+  en: {
+    'site.title': 'The Namsen — your base for salmon fishing in Namdalen',
+    'site.description':
+      'An exclusive property in Overhalla by the Namsen — the queen of Norwegian salmon rivers. Your permanent base for unforgettable fishing.',
+
+    'nav.property': 'The property',
+    'nav.fishing': 'The fishing',
+    'nav.area': 'The area',
+    'nav.contact': 'Contact',
+
+    'hero.eyebrow': 'Overhalla · Namdalen · Norway',
+    'hero.title': 'Your base on the Namsen',
+    'hero.subtitle':
+      'A property made for those who love salmon fishing — beside one of the world’s finest rivers for Atlantic salmon.',
+    'hero.cta': 'View the property',
+    'hero.cta2': 'About the fishing',
+
+    'property.title': 'The property',
+    'property.lead':
+      'A home with space, calm and the river close by — ideal as a holiday house and a base for the fishing season.',
+    'property.factsTitle': 'Key facts',
+    'property.f.type': 'Type',
+    'property.f.typeVal': '[Detached house / holiday property]',
+    'property.f.size': 'Living area',
+    'property.f.sizeVal': '[floor area m²]',
+    'property.f.plot': 'Plot',
+    'property.f.plotVal': '[plot size / freehold]',
+    'property.f.rooms': 'Rooms / bedrooms',
+    'property.f.roomsVal': '[number]',
+    'property.f.year': 'Built / condition',
+    'property.f.yearVal': '[year / renovated]',
+    'property.f.price': 'Guide price',
+    'property.f.priceVal': '[price]',
+    'property.f.location': 'Location',
+    'property.f.locationVal': 'Overhalla, approx. [x] m from the Namsen',
+    'property.galleryNote': 'Photos will be placed here',
+
+    'fishing.title': 'Fishing the Namsen',
+    'fishing.lead': '“The queen of rivers” — famed for big salmon since the 1800s.',
+    'fishing.p1':
+      'The Namsen watercourse is one of Norway’s longest and most respected salmon rivers, with around 100 km of salmon-bearing water and a long history of large fish. It offers everything from calm, broad pools to lively rapids — fishing from a boat (harling) and from the bank.',
+    'fishing.p2':
+      'The season typically runs from early summer into autumn. From the property you can reach several beats in a short drive, so you can follow the conditions and find the best fishing day by day.',
+    'fishing.factHarling': 'Classic harling from a boat',
+    'fishing.factBig': 'Famous for big salmon',
+    'fishing.factLength': 'Approx. 100 km of salmon river',
+    'fishing.linksTitle': 'Read more about the Namsen',
+    'fishing.disclaimer':
+      'Fishing rights, licences and beats vary. What is included with the property is confirmed by the seller.',
+
+    'area.title': 'The area',
+    'area.lead': 'Overhalla in Namdalen — Norwegian nature, salmon and calm.',
+    'area.p1':
+      'Overhalla sits in the heart of Namdalen, surrounded by forest, farmland and the river. A quiet, safe place with everyday shops and services close by.',
+    'area.travelTitle': 'Getting here',
+    'area.travel1': 'Nearest airports: [Namsos / Trondheim Værnes]',
+    'area.travel2': 'Driving time from Værnes: approx. [x] hours',
+    'area.travel3': 'Direct connections from [UK / DE / NL] via Oslo or Trondheim',
+
+    'contact.title': 'Interested?',
+    'contact.lead':
+      'Get in touch for the prospectus, photos and a chat about the property and the fishing.',
+    'contact.emailLabel': 'Email',
+    'contact.phoneLabel': 'Phone',
+    'contact.email': 'espen@aogaa.no',
+    'contact.phone': '[+47 xxx xx xxx]',
+    'contact.person': '[Contact / seller]',
+
+    'footer.tagline': 'Your base for salmon fishing on the Namsen.',
+    'footer.rights': 'All rights reserved.',
+  },
+
+  de: {
+    'site.title': 'Der Namsen — Ihre Basis zum Lachsfischen in Namdalen',
+    'site.description':
+      'Ein exklusives Anwesen in Overhalla am Namsen — der Königin der norwegischen Lachsflüsse. Ihre feste Basis für unvergessliche Angeltage.',
+
+    'nav.property': 'Das Anwesen',
+    'nav.fishing': 'Das Fischen',
+    'nav.area': 'Die Region',
+    'nav.contact': 'Kontakt',
+
+    'hero.eyebrow': 'Overhalla · Namdalen · Norwegen',
+    'hero.title': 'Ihre Basis am Namsen',
+    'hero.subtitle':
+      'Ein Anwesen für alle, die das Lachsfischen lieben — an einem der besten Flüsse der Welt für den Atlantischen Lachs.',
+    'hero.cta': 'Anwesen ansehen',
+    'hero.cta2': 'Über das Fischen',
+
+    'property.title': 'Das Anwesen',
+    'property.lead':
+      'Ein Haus mit Platz, Ruhe und dem Fluss ganz in der Nähe — ideal als Ferienhaus und Basis für die Angelsaison.',
+    'property.factsTitle': 'Eckdaten',
+    'property.f.type': 'Typ',
+    'property.f.typeVal': '[Einfamilienhaus / Ferienimmobilie]',
+    'property.f.size': 'Wohnfläche',
+    'property.f.sizeVal': '[Fläche m²]',
+    'property.f.plot': 'Grundstück',
+    'property.f.plotVal': '[Grundstücksgröße / Eigentum]',
+    'property.f.rooms': 'Zimmer / Schlafzimmer',
+    'property.f.roomsVal': '[Anzahl]',
+    'property.f.year': 'Baujahr / Zustand',
+    'property.f.yearVal': '[Jahr / renoviert]',
+    'property.f.price': 'Preisvorstellung',
+    'property.f.priceVal': '[Preis]',
+    'property.f.location': 'Lage',
+    'property.f.locationVal': 'Overhalla, ca. [x] m vom Namsen',
+    'property.galleryNote': 'Hier kommen die Fotos',
+
+    'fishing.title': 'Fischen im Namsen',
+    'fishing.lead': '„Die Königin der Flüsse“ — berühmt für große Lachse seit dem 19. Jahrhundert.',
+    'fishing.p1':
+      'Das Namsen-Gewässer ist einer der längsten und angesehensten Lachsflüsse Norwegens, mit rund 100 km lachsführender Strecke und einer langen Tradition großer Fische. Er bietet alles von ruhigen, breiten Gumpen bis zu lebhaften Stromschnellen — Fischen vom Boot (Harling) und vom Ufer.',
+    'fishing.p2':
+      'Die Saison reicht typischerweise vom Frühsommer bis in den Herbst. Vom Anwesen aus erreichen Sie mehrere Strecken in kurzer Fahrt und können so die Bedingungen verfolgen und Tag für Tag das beste Fischen finden.',
+    'fishing.factHarling': 'Klassisches Harling vom Boot',
+    'fishing.factBig': 'Bekannt für große Lachse',
+    'fishing.factLength': 'Ca. 100 km Lachsfluss',
+    'fishing.linksTitle': 'Mehr über den Namsen',
+    'fishing.disclaimer':
+      'Fischereirechte, Lizenzen und Strecken variieren. Was zum Anwesen gehört, bestätigt der Verkäufer.',
+
+    'area.title': 'Die Region',
+    'area.lead': 'Overhalla in Namdalen — norwegische Natur, Lachs und Ruhe.',
+    'area.p1':
+      'Overhalla liegt mitten in Namdalen, umgeben von Wald, Feldern und dem Fluss. Ein ruhiger, sicherer Ort mit Geschäften und Diensten des täglichen Bedarfs in der Nähe.',
+    'area.travelTitle': 'Anreise',
+    'area.travel1': 'Nächste Flughäfen: [Namsos / Trondheim Værnes]',
+    'area.travel2': 'Fahrzeit ab Værnes: ca. [x] Stunden',
+    'area.travel3': 'Direktverbindungen aus [UK / DE / NL] über Oslo oder Trondheim',
+
+    'contact.title': 'Interessiert?',
+    'contact.lead':
+      'Melden Sie sich für Exposé, Fotos und ein Gespräch über das Anwesen und das Fischen.',
+    'contact.emailLabel': 'E-Mail',
+    'contact.phoneLabel': 'Telefon',
+    'contact.email': 'espen@aogaa.no',
+    'contact.phone': '[+47 xxx xx xxx]',
+    'contact.person': '[Ansprechpartner / Verkäufer]',
+
+    'footer.tagline': 'Ihre Basis zum Lachsfischen am Namsen.',
+    'footer.rights': 'Alle Rechte vorbehalten.',
+  },
+
+  nl: {
+    'site.title': 'De Namsen — uw uitvalsbasis voor zalmvissen in Namdalen',
+    'site.description':
+      'Een exclusieve woning in Overhalla aan de Namsen — de koningin van de Noorse zalmrivieren. Uw vaste basis voor onvergetelijke visdagen.',
+
+    'nav.property': 'De woning',
+    'nav.fishing': 'Het vissen',
+    'nav.area': 'De omgeving',
+    'nav.contact': 'Contact',
+
+    'hero.eyebrow': 'Overhalla · Namdalen · Noorwegen',
+    'hero.title': 'Uw basis aan de Namsen',
+    'hero.subtitle':
+      'Een woning voor wie van zalmvissen houdt — aan een van ’s werelds beste rivieren voor Atlantische zalm.',
+    'hero.cta': 'Bekijk de woning',
+    'hero.cta2': 'Over het vissen',
+
+    'property.title': 'De woning',
+    'property.lead':
+      'Een huis met ruimte, rust en de rivier dichtbij — ideaal als vakantiewoning en basis voor het visseizoen.',
+    'property.factsTitle': 'Kenmerken',
+    'property.f.type': 'Type',
+    'property.f.typeVal': '[Vrijstaande woning / vakantiewoning]',
+    'property.f.size': 'Woonoppervlak',
+    'property.f.sizeVal': '[oppervlak m²]',
+    'property.f.plot': 'Perceel',
+    'property.f.plotVal': '[perceeloppervlak / eigen grond]',
+    'property.f.rooms': 'Kamers / slaapkamers',
+    'property.f.roomsVal': '[aantal]',
+    'property.f.year': 'Bouwjaar / staat',
+    'property.f.yearVal': '[jaar / gerenoveerd]',
+    'property.f.price': 'Richtprijs',
+    'property.f.priceVal': '[prijs]',
+    'property.f.location': 'Ligging',
+    'property.f.locationVal': 'Overhalla, ca. [x] m van de Namsen',
+    'property.galleryNote': 'Hier komen de foto’s',
+
+    'fishing.title': 'Vissen in de Namsen',
+    'fishing.lead': '“De koningin der rivieren” — beroemd om grote zalm sinds de 19e eeuw.',
+    'fishing.p1':
+      'De Namsen is een van de langste en meest gerespecteerde zalmrivieren van Noorwegen, met zo’n 100 km zalmwater en een lange geschiedenis van grote vis. Van rustige, brede kolken tot levendige stroomversnellingen — vissen vanuit de boot (harling) en vanaf de oever.',
+    'fishing.p2':
+      'Het seizoen loopt doorgaans van de vroege zomer tot in de herfst. Vanaf de woning bereikt u meerdere trajecten binnen korte rijafstand, zodat u de omstandigheden kunt volgen en dag na dag het beste vissen vindt.',
+    'fishing.factHarling': 'Klassiek harling vanuit de boot',
+    'fishing.factBig': 'Bekend om grote zalm',
+    'fishing.factLength': 'Ca. 100 km zalmrivier',
+    'fishing.linksTitle': 'Lees meer over de Namsen',
+    'fishing.disclaimer':
+      'Visrechten, vergunningen en trajecten verschillen. Wat bij de woning hoort, bevestigt de verkoper.',
+
+    'area.title': 'De omgeving',
+    'area.lead': 'Overhalla in Namdalen — Noorse natuur, zalm en rust.',
+    'area.p1':
+      'Overhalla ligt midden in Namdalen, omringd door bos, landbouwgrond en de rivier. Een rustige, veilige plek met winkels en voorzieningen dichtbij.',
+    'area.travelTitle': 'Reizen naar hier',
+    'area.travel1': 'Dichtstbijzijnde luchthavens: [Namsos / Trondheim Værnes]',
+    'area.travel2': 'Rijtijd vanaf Værnes: ca. [x] uur',
+    'area.travel3': 'Directe verbindingen vanuit [UK / DE / NL] via Oslo of Trondheim',
+
+    'contact.title': 'Interesse?',
+    'contact.lead':
+      'Neem contact op voor de brochure, foto’s en een gesprek over de woning en het vissen.',
+    'contact.emailLabel': 'E-mail',
+    'contact.phoneLabel': 'Telefoon',
+    'contact.email': 'espen@aogaa.no',
+    'contact.phone': '[+47 xxx xx xxx]',
+    'contact.person': '[Contactpersoon / verkoper]',
+
+    'footer.tagline': 'Uw basis voor zalmvissen aan de Namsen.',
+    'footer.rights': 'Alle rechten voorbehouden.',
+  },
+} as const;
+
+export type UIKey = keyof (typeof ui)['no'];

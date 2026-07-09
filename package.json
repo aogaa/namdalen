@@ -1,0 +1,17 @@
+{
+  "name": "namdalen",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "namsen.aogaa.no — salgsside for eiendom i Overhalla med Namsen som base for laksefiske",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.2.0"
+  }
+}

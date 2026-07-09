@@ -1,0 +1,23 @@
+---
+import { languages, type Lang } from '../i18n/ui';
+import { localePath } from '../i18n/utils';
+
+interface Props {
+  current: Lang;
+}
+const { current } = Astro.props;
+---
+
+<nav class="langpicker" aria-label="Språk / Language">
+  {
+    (Object.keys(languages) as Lang[]).map((lang) => (
+      <a
+        href={`${localePath(lang)}/`}
+        hreflang={lang}
+        aria-current={lang === current ? 'true' : 'false'}
+      >
+        {lang}
+      </a>
+    ))
+  }
+</nav>

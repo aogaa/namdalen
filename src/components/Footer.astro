@@ -1,0 +1,24 @@
+---
+import { type Lang } from '../i18n/ui';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <a class="brand" href="#top">Namsen<span>.</span></a>
+      <small>{t('footer.tagline')}</small>
+    </div>
+    <div>
+      <a href={`mailto:${t('contact.email')}`}>{t('contact.email')}</a>
+      <small>© {year} · Overhalla, Namdalen · {t('footer.rights')}</small>
+    </div>
+  </div>
+</footer>

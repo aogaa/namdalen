@@ -1,0 +1,27 @@
+---
+import { type Lang } from '../i18n/ui';
+import { useTranslations, localePath } from '../i18n/utils';
+import LanguagePicker from './LanguagePicker.astro';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const base = localePath(lang);
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href={`${base}/`}>Namsen<span>.</span></a>
+    <div class="nav">
+      <div class="nav__links">
+        <a href={`${base}/#property`}>{t('nav.property')}</a>
+        <a href={`${base}/#fishing`}>{t('nav.fishing')}</a>
+        <a href={`${base}/#area`}>{t('nav.area')}</a>
+        <a href={`${base}/#contact`}>{t('nav.contact')}</a>
+      </div>
+      <LanguagePicker current={lang} />
+    </div>
+  </div>
+</header>

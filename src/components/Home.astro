@@ -1,0 +1,143 @@
+---
+import { type Lang } from '../i18n/ui';
+import { useTranslations, localePath } from '../i18n/utils';
+import Placeholder from './Placeholder.astro';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const base = localePath(lang);
+
+const facts = [
+  ['property.f.type', 'property.f.typeVal'],
+  ['property.f.size', 'property.f.sizeVal'],
+  ['property.f.plot', 'property.f.plotVal'],
+  ['property.f.rooms', 'property.f.roomsVal'],
+  ['property.f.year', 'property.f.yearVal'],
+  ['property.f.location', 'property.f.locationVal'],
+  ['property.f.price', 'property.f.priceVal'],
+] as const;
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="container hero__inner">
+    <p class="eyebrow">{t('hero.eyebrow')}</p>
+    <h1>{t('hero.title')}</h1>
+    <p class="hero__subtitle">{t('hero.subtitle')}</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href={`${base}/#property`}>{t('hero.cta')}</a>
+      <a class="btn btn--ghost" href={`${base}/#fishing`}>{t('hero.cta2')}</a>
+    </div>
+  </div>
+</section>
+
+<!-- EIENDOMMEN -->
+<section id="property" class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2>{t('property.title')}</h2>
+      <p class="section__lead">{t('property.lead')}</p>
+    </div>
+
+    <div class="gallery">
+      <Placeholder label={t('property.galleryNote')} ratio="16 / 10" />
+      <Placeholder label={t('property.galleryNote')} ratio="4 / 5" />
+      <Placeholder label={t('property.galleryNote')} ratio="4 / 3" />
+      <Placeholder label={t('property.galleryNote')} ratio="4 / 3" />
+      <Placeholder label={t('property.galleryNote')} ratio="4 / 3" />
+    </div>
+
+    <h3 style="margin-top:2.5rem">{t('property.factsTitle')}</h3>
+    <dl class="facts">
+      {
+        facts.map(([k, v]) => (
+          <div>
+            <dt>{t(k)}</dt>
+            <dd>{t(v)}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</section>
+
+<!-- FISKET -->
+<section id="fishing" class="section section--alt">
+  <div class="container">
+    <div class="split">
+      <div>
+        <p class="eyebrow">{t('fishing.lead')}</p>
+        <h2>{t('fishing.title')}</h2>
+        <p>{t('fishing.p1')}</p>
+        <p>{t('fishing.p2')}</p>
+      </div>
+      <Placeholder label={t('property.galleryNote')} ratio="4 / 5" />
+    </div>
+
+    <div class="cards">
+      <div class="card"><strong>≈ 100 km</strong>{t('fishing.factLength')}</div>
+      <div class="card"><strong>★</strong>{t('fishing.factBig')}</div>
+      <div class="card"><strong>⚓</strong>{t('fishing.factHarling')}</div>
+    </div>
+
+    <h3 style="margin-top:2.5rem">{t('fishing.linksTitle')}</h3>
+    <ul class="linklist">
+      <li>
+        <a href="https://lakseelver.no/nb/elver/namsenvassdraget" target="_blank" rel="noopener">
+          lakseelver.no — Namsenvassdraget
+        </a>
+      </li>
+      <li>
+        <a href="https://fishnamsen.no/" target="_blank" rel="noopener">
+          fishnamsen.no
+        </a>
+      </li>
+    </ul>
+
+    <p class="note">{t('fishing.disclaimer')}</p>
+  </div>
+</section>
+
+<!-- OMRÅDET -->
+<section id="area" class="section">
+  <div class="container">
+    <div class="split">
+      <Placeholder label={t('property.galleryNote')} ratio="16 / 10" />
+      <div>
+        <p class="eyebrow">{t('area.lead')}</p>
+        <h2>{t('area.title')}</h2>
+        <p>{t('area.p1')}</p>
+        <h3 style="margin-top:1.5rem">{t('area.travelTitle')}</h3>
+        <ul>
+          <li>{t('area.travel1')}</li>
+          <li>{t('area.travel2')}</li>
+          <li>{t('area.travel3')}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="contact" class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <h2>{t('contact.title')}</h2>
+      <p class="section__lead">{t('contact.lead')}</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <p class="label">{t('contact.emailLabel')}</p>
+        <a href={`mailto:${t('contact.email')}`}>{t('contact.email')}</a>
+      </div>
+      <div class="contact-card">
+        <p class="label">{t('contact.phoneLabel')}</p>
+        <a href={`tel:${t('contact.phone').replace(/[^+\d]/g, '')}`}>{t('contact.phone')}</a>
+      </div>
+    </div>
+  </div>
+</section>

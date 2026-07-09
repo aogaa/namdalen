@@ -1,0 +1,53 @@
+---
+import { languages, type Lang } from '../i18n/ui';
+import { useTranslations, localePath, hreflang } from '../i18n/utils';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const site = Astro.site ?? new URL('https://namsen.aogaa.no');
+const canonical = new URL(`${localePath(lang)}/`, site).href;
+---
+
+<!doctype html>
+<html lang={hreflang[lang]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t('site.title')}</title>
+    <meta name="description" content={t('site.description')} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Språkalternativer for søkemotorer (UK/DE/NL) -->
+    {
+      (Object.keys(languages) as Lang[]).map((l) => (
+        <link
+          rel="alternate"
+          hreflang={hreflang[l]}
+          href={new URL(`${localePath(l)}/`, site).href}
+        />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={new URL('/', site).href} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={t('site.title')} />
+    <meta property="og:description" content={t('site.description')} />
+    <meta property="og:url" content={canonical} />
+    <meta name="theme-color" content="#0d2429" />
+  </head>
+  <body id="top">
+    <Header lang={lang} />
+    <main>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>
