@@ -29,6 +29,8 @@ import deer from '../images/namdalen_13.webp';
 import plan1 from '../images/plan1.jpg';
 import plan2 from '../images/plan2.jpg';
 
+import historic from '../images/sorbak.jpg';
+
 export interface Photo {
   src: ImageMetadata;
   cap: UIKey;
@@ -66,3 +68,6 @@ export const floorPlanPhotos: Photo[] = [
   { src: plan1, cap: 'cap.plan1' },
   { src: plan2, cap: 'cap.plan2' },
 ];
+
+// Historisk foto av gården, ca. 1930
+export const historyPhoto: Photo = { src: historic, cap: 'cap.history' };

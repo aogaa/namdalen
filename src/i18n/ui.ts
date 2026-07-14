@@ -18,6 +18,7 @@ export const ui = {
       'Eksklusiv eiendom i Overhalla ved Namsen — dronningen av norske lakseelver. Din faste base for uforglemmelige fisketurer.',
 
     'nav.property': 'Eiendommen',
+    'nav.history': 'Historien',
     'nav.fishing': 'Fisket',
     'nav.area': 'Området',
     'nav.contact': 'Kontakt',
@@ -111,6 +112,19 @@ export const ui = {
     'cap.deer': 'Rådyr i vinterlandskapet',
     'cap.plan1': 'Første etasje: stue, kjøkken, soverom, bad og terrasse',
     'cap.plan2': 'Andre etasje: tre soverom',
+    'cap.history': 'Sørbakk, fotografert rundt 1930',
+
+    'history.eyebrow': 'Historien',
+    'history.title': 'Sørbakk — en gård med dype røtter',
+    'history.lead':
+      'Huset på bildet er fotografert rundt 1930 — men historien til stedet strekker seg langt lenger tilbake.',
+    'history.p1':
+      'Helt fra Harald Hårfagres tid — og sannsynligvis langt tidligere — har Namdalen vært et maktsentrum i Trøndelag. Navnet Skage kommer av det norrøne ordet «skagi», som betyr en fremskytende odde av land, og nettopp en slik odde finner vi sentralt i Namdalen. I kildene dukker soknet Skage opp første gang i 1507, mens gården Skage står oppført i matrikkelen fra 1604.',
+    'history.p2':
+      'Vår lille del av dette historiske landskapet ble skilt ut fra Skage i 1913. Bruket «Sørbakk» ble en selveiende gård — og har vært det siden. Huset er opprinnelig reist i solid laftetømmer, men har fått moderne isolasjon og ytterpanel.',
+    'history.factYear': 'Selveiende gård siden 1913',
+    'history.factBuild':
+      'Opprinnelig i laftetømmer — modernisert med isolasjon og ytterpanel.',
 
     'nav.explore': 'Utforsk',
     'area.flights': 'Daglige flyavganger fra Amsterdam, London og Frankfurt',
@@ -130,6 +144,7 @@ export const ui = {
       'An exclusive property in Overhalla by the Namsen — the queen of Norwegian salmon rivers. Your permanent base for unforgettable fishing.',
 
     'nav.property': 'The property',
+    'nav.history': 'History',
     'nav.fishing': 'The fishing',
     'nav.area': 'The area',
     'nav.contact': 'Contact',
@@ -223,6 +238,19 @@ export const ui = {
     'cap.deer': 'Roe deer in the winter landscape',
     'cap.plan1': 'Ground floor: living room, kitchen, bedroom, bathroom and terrace',
     'cap.plan2': 'First floor: three bedrooms',
+    'cap.history': 'Sørbakk, photographed around 1930',
+
+    'history.eyebrow': 'History',
+    'history.title': 'Sørbakk — a farm with deep roots',
+    'history.lead':
+      'The house in this photograph was captured around 1930 — but the story of the place reaches far further back.',
+    'history.p1':
+      'Since the days of Harald Fairhair — and most likely long before — Namdalen has been a seat of power in Trøndelag. The name Skage comes from the Old Norse word «skagi», meaning a headland jutting out into the land, and just such a headland lies at the heart of Namdalen. The Skage parish first appears in the records in 1507, while the Skage farm is listed in the land register of 1604.',
+    'history.p2':
+      'Our small part of this historic landscape was separated from Skage in 1913. The holding of «Sørbakk» became a freehold farm — and has remained one ever since. The house was originally built of solid hand-hewn logs, and has since been given modern insulation and cladding.',
+    'history.factYear': 'A freehold farm since 1913',
+    'history.factBuild':
+      'Originally built in traditional log timber — modernised with insulation and cladding.',
 
     'nav.explore': 'Explore',
     'area.flights': 'Daily flight connections from Amsterdam, London and Frankfurt',
@@ -243,6 +271,7 @@ export const ui = {
       'Ein exklusives Anwesen in Overhalla am Namsen — der Königin der norwegischen Lachsflüsse. Ihre feste Basis für unvergessliche Angeltage.',
 
     'nav.property': 'Das Anwesen',
+    'nav.history': 'Geschichte',
     'nav.fishing': 'Das Fischen',
     'nav.area': 'Die Region',
     'nav.contact': 'Kontakt',
@@ -336,6 +365,19 @@ export const ui = {
     'cap.deer': 'Rehe in der Winterlandschaft',
     'cap.plan1': 'Erdgeschoss: Wohnzimmer, Küche, Schlafzimmer, Bad und Terrasse',
     'cap.plan2': 'Obergeschoss: drei Schlafzimmer',
+    'cap.history': 'Sørbakk, aufgenommen um 1930',
+
+    'history.eyebrow': 'Geschichte',
+    'history.title': 'Sørbakk — ein Hof mit tiefen Wurzeln',
+    'history.lead':
+      'Das Haus auf dieser Aufnahme wurde um 1930 fotografiert — doch die Geschichte des Ortes reicht weit zurück.',
+    'history.p1':
+      'Schon zur Zeit Harald Schönhaars — und wahrscheinlich weit früher — war das Namdal ein Machtzentrum in Trøndelag. Der Name Skage stammt vom altnordischen Wort «skagi», das eine ins Land ragende Landzunge bezeichnet, und genau eine solche liegt mitten im Namdal. In den Quellen erscheint das Kirchspiel Skage erstmals 1507, der Hof Skage im Grundregister von 1604.',
+    'history.p2':
+      'Unser kleiner Teil dieser historischen Landschaft wurde 1913 von Skage abgetrennt. Das Anwesen «Sørbakk» wurde ein Freibauernhof — und ist es seither geblieben. Das Haus wurde ursprünglich aus massivem Blockbohlenholz errichtet und später mit moderner Dämmung und Außenverkleidung versehen.',
+    'history.factYear': 'Freibauernhof seit 1913',
+    'history.factBuild':
+      'Ursprünglich in Blockbauweise — modernisiert mit Dämmung und Außenverkleidung.',
 
     'nav.explore': 'Entdecken',
     'area.flights': 'Tägliche Flugverbindungen ab Amsterdam, London und Frankfurt',
@@ -356,6 +398,7 @@ export const ui = {
       'Een exclusieve woning in Overhalla aan de Namsen — de koningin van de Noorse zalmrivieren. Uw vaste basis voor onvergetelijke visdagen.',
 
     'nav.property': 'De woning',
+    'nav.history': 'Geschiedenis',
     'nav.fishing': 'Het vissen',
     'nav.area': 'De omgeving',
     'nav.contact': 'Contact',
@@ -449,6 +492,19 @@ export const ui = {
     'cap.deer': 'Reeën in het winterlandschap',
     'cap.plan1': 'Begane grond: woonkamer, keuken, slaapkamer, badkamer en terras',
     'cap.plan2': 'Eerste verdieping: drie slaapkamers',
+    'cap.history': 'Sørbakk, gefotografeerd rond 1930',
+
+    'history.eyebrow': 'Geschiedenis',
+    'history.title': 'Sørbakk — een boerderij met diepe wortels',
+    'history.lead':
+      'Het huis op deze foto is rond 1930 vastgelegd — maar de geschiedenis van de plek reikt veel verder terug.',
+    'history.p1':
+      'Al sinds de tijd van Harald Schoonhaar — en waarschijnlijk lang daarvoor — is Namdalen een machtscentrum in Trøndelag geweest. De naam Skage komt van het Oudnoorse woord «skagi», dat een vooruitstekende landtong betekent, en precies zo\'n landtong ligt centraal in Namdalen. In de bronnen verschijnt de parochie Skage voor het eerst in 1507, terwijl de boerderij Skage in het kadaster van 1604 staat vermeld.',
+    'history.p2':
+      'Ons kleine deel van dit historische landschap werd in 1913 van Skage afgesplitst. De hoeve «Sørbakk» werd een zelfstandige boerderij — en is dat sindsdien gebleven. Het huis is oorspronkelijk opgetrokken uit massief blokhout, maar heeft moderne isolatie en buitenbekleding gekregen.',
+    'history.factYear': 'Zelfstandige boerderij sinds 1913',
+    'history.factBuild':
+      'Oorspronkelijk in blokhout — gemoderniseerd met isolatie en buitenbekleding.',
 
     'nav.explore': 'Ontdek',
     'area.flights': 'Dagelijkse vluchtverbindingen vanuit Amsterdam, Londen en Frankfurt',
