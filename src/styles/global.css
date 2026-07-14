@@ -350,6 +350,19 @@ img {
   }
 }
 
+/* Plantegninger — vises i sin helhet (ikke beskåret), to i bredden */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(0.6rem, 1.5vw, 1rem);
+  margin-top: 1rem;
+}
+@media (max-width: 720px) {
+  .plans {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Bilde med tekst — klikkbar knapp som åpner lightbox */
 .shot {
   position: relative;
@@ -413,6 +426,20 @@ img {
   letter-spacing: 0.01em;
   background: linear-gradient(to top, rgba(7, 22, 25, 0.78), transparent);
 }
+/* Plantegning — vis hele tegningen på lys bunn i stedet for beskåret 4:3 */
+.shot--plan {
+  aspect-ratio: auto;
+  background: #fff;
+}
+.shot--plan img {
+  height: auto;
+  object-fit: contain;
+}
+.shot--plan:hover img,
+.shot--plan:focus-visible img {
+  transform: none;
+}
+
 /* I split-layout fyller bildet kolonnen med fast høyde */
 .split .shot {
   aspect-ratio: 4 / 3;

@@ -8,6 +8,7 @@ import {
   propertyPhotos,
   fishingPhotos,
   areaPhotos,
+  floorPlanPhotos,
 } from '../data/photos';
 import { linkGroups, resolveUrl } from '../data/links';
 
@@ -92,6 +93,21 @@ const [areaLead, ...areaSeasons] = areaPhotos;
         ))
       }
     </dl>
+
+    <h3 style="margin-top:2.5rem">{t('property.plansTitle')}</h3>
+    <p class="section__lead">{t('property.plansLead')}</p>
+    <div class="plans">
+      {
+        floorPlanPhotos.map((photo) => (
+          <Figure
+            photo={photo}
+            lang={lang}
+            variant="plan"
+            sizes="(max-width: 720px) 100vw, 50vw"
+          />
+        ))
+      }
+    </div>
   </div>
 </section>
 

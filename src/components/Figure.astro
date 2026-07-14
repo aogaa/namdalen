@@ -9,11 +9,21 @@ interface Props {
   lang: Lang;
   sizes?: string;
   loading?: 'lazy' | 'eager';
+  variant?: 'photo' | 'plan';
 }
-const { photo, lang, sizes = '(max-width: 720px) 100vw, 33vw', loading = 'lazy' } =
-  Astro.props;
+const {
+  photo,
+  lang,
+  sizes = '(max-width: 720px) 100vw, 33vw',
+  loading = 'lazy',
+  variant = 'photo',
+} = Astro.props;
 const t = useTranslations(lang);
 const caption = t(photo.cap);
+
+// Plantegninger vises i sin helhet (ikke beskåret) og trenger litt mer oppløsning
+// for at romnavnene skal være lesbare.
+const widths = variant === 'plan' ? [560, 900, 1280] : [400, 700, 1066];
 
 // Full oppløsning til lightbox (klikk for større versjon)
 const full = await getImage({
@@ -25,7 +35,7 @@ const full = await getImage({
 
 <button
   type="button"
-  class="shot"
+  class:list={['shot', variant === 'plan' && 'shot--plan']}
   data-full={full.src}
   data-caption={caption}
   aria-label={caption}
@@ -33,7 +43,7 @@ const full = await getImage({
   <Image
     src={photo.src}
     alt={caption}
-    widths={[400, 700, 1066]}
+    widths={widths}
     sizes={sizes}
     loading={loading}
   />

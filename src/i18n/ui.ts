@@ -33,6 +33,9 @@ export const ui = {
     'property.lead':
       'Et hjem med plass, ro og nærhet til elva — perfekt som feriebolig og base for fiskesesongen.',
     'property.factsTitle': 'Fakta',
+    'property.plansTitle': 'Plantegninger',
+    'property.plansLead':
+      'Praktisk planløsning over to plan. Klikk på tegningene for større visning.',
     'property.f.type': 'Type',
     'property.f.typeVal': 'Enebolig med sidebygning',
     'property.f.bedrooms': 'Soverom',
@@ -106,6 +109,8 @@ export const ui = {
     'cap.winter': 'Vinterkveld over bygda',
     'cap.sunrise': 'Morgenlys over jordene',
     'cap.deer': 'Rådyr i vinterlandskapet',
+    'cap.plan1': 'Første etasje: stue, kjøkken, soverom, bad og terrasse',
+    'cap.plan2': 'Andre etasje: tre soverom',
 
     'nav.explore': 'Utforsk',
     'area.flights': 'Daglige flyavganger fra Amsterdam, London og Frankfurt',
@@ -140,6 +145,9 @@ export const ui = {
     'property.lead':
       'A home with space, calm and the river close by — ideal as a holiday house and a base for the fishing season.',
     'property.factsTitle': 'Key facts',
+    'property.plansTitle': 'Floor plans',
+    'property.plansLead':
+      'A practical layout across two floors. Click a plan to view it larger.',
     'property.f.type': 'Type',
     'property.f.typeVal': 'Detached house with annex',
     'property.f.bedrooms': 'Bedrooms',
@@ -213,6 +221,8 @@ export const ui = {
     'cap.winter': 'A winter evening over the village',
     'cap.sunrise': 'Morning light over the fields',
     'cap.deer': 'Roe deer in the winter landscape',
+    'cap.plan1': 'Ground floor: living room, kitchen, bedroom, bathroom and terrace',
+    'cap.plan2': 'First floor: three bedrooms',
 
     'nav.explore': 'Explore',
     'area.flights': 'Daily flight connections from Amsterdam, London and Frankfurt',
@@ -248,6 +258,9 @@ export const ui = {
     'property.lead':
       'Ein Haus mit Platz, Ruhe und dem Fluss ganz in der Nähe — ideal als Ferienhaus und Basis für die Angelsaison.',
     'property.factsTitle': 'Eckdaten',
+    'property.plansTitle': 'Grundrisse',
+    'property.plansLead':
+      'Ein praktischer Grundriss über zwei Etagen. Zum Vergrößern auf einen Plan klicken.',
     'property.f.type': 'Typ',
     'property.f.typeVal': 'Einfamilienhaus mit Nebengebäude',
     'property.f.bedrooms': 'Schlafzimmer',
@@ -321,6 +334,8 @@ export const ui = {
     'cap.winter': 'Winterabend über dem Dorf',
     'cap.sunrise': 'Morgenlicht über den Feldern',
     'cap.deer': 'Rehe in der Winterlandschaft',
+    'cap.plan1': 'Erdgeschoss: Wohnzimmer, Küche, Schlafzimmer, Bad und Terrasse',
+    'cap.plan2': 'Obergeschoss: drei Schlafzimmer',
 
     'nav.explore': 'Entdecken',
     'area.flights': 'Tägliche Flugverbindungen ab Amsterdam, London und Frankfurt',
@@ -356,6 +371,9 @@ export const ui = {
     'property.lead':
       'Een huis met ruimte, rust en de rivier dichtbij — ideaal als vakantiewoning en basis voor het visseizoen.',
     'property.factsTitle': 'Kenmerken',
+    'property.plansTitle': 'Plattegronden',
+    'property.plansLead':
+      'Een praktische indeling over twee verdiepingen. Klik op een plattegrond voor een grotere weergave.',
     'property.f.type': 'Type',
     'property.f.typeVal': 'Vrijstaande woning met bijgebouw',
     'property.f.bedrooms': 'Slaapkamers',
@@ -429,6 +447,8 @@ export const ui = {
     'cap.winter': 'Winteravond boven het dorp',
     'cap.sunrise': 'Ochtendlicht over de velden',
     'cap.deer': 'Reeën in het winterlandschap',
+    'cap.plan1': 'Begane grond: woonkamer, keuken, slaapkamer, badkamer en terras',
+    'cap.plan2': 'Eerste verdieping: drie slaapkamers',
 
     'nav.explore': 'Ontdek',
     'area.flights': 'Dagelijkse vluchtverbindingen vanuit Amsterdam, Londen en Frankfurt',

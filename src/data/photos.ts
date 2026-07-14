@@ -26,6 +26,9 @@ import winter from '../images/namdalen_8.webp';
 import sunrise from '../images/namdalen_7.webp';
 import deer from '../images/namdalen_13.webp';
 
+import plan1 from '../images/plan1.jpg';
+import plan2 from '../images/plan2.jpg';
+
 export interface Photo {
   src: ImageMetadata;
   cap: UIKey;
@@ -57,4 +60,9 @@ export const areaPhotos: Photo[] = [
   { src: winter, cap: 'cap.winter' },
   { src: sunrise, cap: 'cap.sunrise' },
   { src: deer, cap: 'cap.deer' },
+];
+
+export const floorPlanPhotos: Photo[] = [
+  { src: plan1, cap: 'cap.plan1' },
+  { src: plan2, cap: 'cap.plan2' },
 ];
